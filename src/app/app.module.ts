@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent, AppListComponent} from './app.component';
+import {CarouselService} from './services/carousel.service';
+import { NgxSiemaModule } from 'ngx-siema';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+      AppListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxSiemaModule.forRoot()
   ],
-  providers: [],
+  providers: [CarouselService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
