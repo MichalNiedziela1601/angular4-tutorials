@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  border: 1px solid #eee;
+
+
+  .header {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    max-width: 200px;
+    padding: 5px 0 5px 15px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    margin-left: 30px;
+
+    span {
+      margin-left: 20px;
+      font-size: 1.4em;
+    }
+  }
+
+  .title-header {
+    flex: 2 1 0;
+  }
+
+}
+
+.form_box {
+  padding: 10px 20px;
+  background: #defdff;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px  #ddd;
+  
+  &:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    padding-bottom: 20px;
+    
+  }
+}
+
+.link-btn {
+  width: auto;
+  font-weight: 500;
+  display: block;
+  float: right;
+}

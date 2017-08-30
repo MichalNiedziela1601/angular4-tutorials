@@ -1,0 +1,14 @@
+<div class="article">
+    <div class="points">
+        <div><h1>{{article.votes}}</h1>
+            <h2>points</h2></div>
+    </div>
+    <div class="description">
+        <h1>{{article.title}}</h1>
+        <h4>({{article.domain()}})</h4>
+        <div class="vote-buttons">
+            <button class="upvote" (click)="upVote()">upvote</button>
+            <button class="downvote" (click)="downVote()">downvote</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.article {
+  display: flex;
+  margin: 10px 0;
+  align-self: flex-start;
+
+  .points {
+    background: #dddddd;
+    border-radius: 5px;
+    flex: 1 1 0;
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    h1 {
+      margin: 0;
+      font-size: 3em;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .description {
+    flex: 2 1 0;
+
+    h1 {
+      margin: 0;
+    }
+
+    h4 {
+      margin: 0;
+      color: #918585;
+    }
+
+    .vote-buttons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-top: 25px;
+
+      button {
+        border: 0;
+        background-color: transparent;
+        color: blue;
+        font-size: 1.3em;
+        transition: all .1s linear;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .upvote:before {
+        content: "\27a1";
+        transform: rotate(-90deg);
+        display: inline-block;
+      }
+
+      .downvote:before {
+        content: "\27a1";
+        transform: rotate(90deg);
+        display: inline-block;
+      }
+    }
+
+  }
+}

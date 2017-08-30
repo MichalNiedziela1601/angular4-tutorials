@@ -1,0 +1,28 @@
+form {
+
+  label {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 1.2em;
+    display: block;
+  }
+
+  input {
+    padding: 9px 13px;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.1em;
+    box-shadow: inset 0 1px 3px #ddd;
+
+    &:focus {
+      border-color: #30ffd5;
+    }
+  }
+
+  .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+}

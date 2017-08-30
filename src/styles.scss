@@ -1,0 +1,14 @@
+@import "assets/styles/forms";
+@import "assets/styles/buttons";
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.container-fluid {
+    @extend .container;
+    max-width: 1080px;
+    display: flex;
+}
