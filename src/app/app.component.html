@@ -5,7 +5,7 @@
         <h1>{{product.name}}</h1>
         <span>{{product.sku}}</span>
 
-        <app-products-list [products]="products"></app-products-list>
+        <app-products-list [productList]="products" (onProductSelected)="productWasSelect($event)"></app-products-list>
     </div>
 </section>
 
