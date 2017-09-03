@@ -2,8 +2,6 @@
 
 <section class="section">
     <div class="container">
-        <h1>{{product.name}}</h1>
-        <span>{{product.sku}}</span>
 
         <app-products-list [productList]="products" (onProductSelected)="productWasSelect($event)"></app-products-list>
     </div>

@@ -1,0 +1,12 @@
+<article class="media">
+    <app-product-image [product]="product"></app-product-image>
+    <div class="media-content">
+        <div class="title is-4">{{ product.name}}</div>
+        <div class="subtitle is-6">SKU #{{ product.sku }}</div>
+
+        <div class="content">
+            <app-product-department [product]="product"></app-product-department>
+        </div>
+    </div>
+    <app-price-display [price]="product.price"></app-price-display>
+</article>
